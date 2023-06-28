@@ -1,0 +1,411 @@
+/*css global*/
+@font-face{ 
+	font-family: BEYNO Regular;
+	src: url(../font/BEYNO.ttf);
+
+}
+/* panthera*/
+@font-face{
+	font-family: panthera;
+	src: url("../font/pantheraRegular-MVZ9J.ttf");
+}
+/* wakanda*/
+@font-face{
+	font-family: Wakanda forever;
+	src: url("../font/WakandaForever-Regular.ttf");
+}
+/* cantarell*/
+@font-face{
+	font-family: cantarell;
+	src: url("../font/cantarell-Regular.ttf");
+}
+html{
+	font-size: 1vw;
+}
+body{
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+    animation-name: fade-in;
+    animation-duration: 5s;
+
+}
+/*reseaux sociaux*/
+.left{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 1vw;
+    position: absolute;
+    top:  0;
+    left: 3vw;
+    display: grid;
+    position: fixed;
+}
+
+.vertical-line1 {
+    border-left: 3px solid purple;
+    min-height: 29vw;
+}
+
+.vertical-line2 {
+    border-left: 3px solid purple; 
+    height: 19.1vw;
+}
+
+.vertical-icon {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    margin-left: 14px;
+}
+
+.vertical-icon .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    list-style-type: none;
+    margin-left: -3vw;
+}
+
+.vertical-icon .icons img {
+    width: 16px;
+}
+
+header{
+	background-color: black;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+header nav ul li{
+	text-decoration-style: none;
+	display: inline-block;
+	justify-content: space-between;
+	padding-left: 10%;
+}
+header nav ul li :hover{
+	color: red;
+	text-shadow: 10vw;
+}
+a {
+	color: white;
+}
+/* en tête */
+#en-tête .logo{
+	padding-top: 5%;
+	padding-left: 15%;
+}
+#en-tête .logo :hover{
+    transform: scale(1.2);
+
+}
+#en-tête .wakanda-style{
+	font-family: BEYNO Regular;
+}
+#en-tête .enigme-style{
+	font-family: BEYNO Regular;
+}
+#en-tête .index.html{
+	font-family:  cantarell;
+
+}
+h1{
+	font-family: panthera;
+	font-size: 4em;
+	color: #9E91B7; 
+}
+h2{
+	font-family: BEYNO Regular;
+	font-size: 3em;
+	color: violet;
+}
+h4{
+	font-family: cantarell;
+	font-size: 1em;
+	color: white;
+}
+/* section-1*/
+#blackpanther .ennoncer-wakanda{
+	padding-right: 10%;
+	margin-left: 5%;
+}
+#blackpanther .Pantherhome1{
+	width: 120%;
+	height: 120%;
+	padding-right: 30%;
+}
+/*section-2 */
+#blackpanther{
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+/* section-1 grid-1*/
+.grid-1{
+	margin-left: 10vw;
+}
+.grid-1 .wakanda{
+	margin-left: 1vw;
+}
+.grid-1 .black-panter{
+	padding-right: 10%;
+	margin-left: 5%;
+}
+#killmonger {
+	display: grid;
+	grid-template-columns: 5% repeat(5, 1fr );  
+	background-color: #07338C;
+	height: 20vw;
+	margin-left: 5vw;
+}
+#killmonger .Pantherhome2{
+     width: 25vw;
+     height: 35vw;
+     position: relative; 
+     top: -5em;
+}
+#killmonger .Pantherhome3{
+	width: 10vw;
+	height: 20vw;
+}
+#killmonger .Pantherhome4{
+	width: 15vw;
+	height: 20vw;
+}
+
+/* profil*/
+#grid-2 .profil span{
+	font-weight: bold;
+	color: black;
+	font-size: 2em;
+}
+#grid-2 .profil p{
+	color: black;
+	font-size: 1em;
+}
+/* grid-2 */
+#grid-2 .arrière-profil{
+	background-color: white;
+	border-radius: 5vw;
+	width: 35vw;
+	height: 60vw;
+	margin-bottom: 10vw;
+
+}
+#grid-2{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 7vw;
+	margin-top: 20vw;
+}
+#grid-2 .déscription{
+	padding-left: 5vw;
+	margin-top: 20vw;
+}
+#grid-2 .menu-profil{
+	text-align: center;
+	justify-content: space-between;
+}
+#grid-2 .naissance-un-prince{
+	margin-top: 20vw;
+	margin-left: 10vw;	
+}
+#grid-2 .challa{
+	font-size: 2vw;
+}
+#grid-2 .prince{
+	width: 100%
+	height: 30vh;
+	margin-top: -20vw;
+}
+
+#grid-2 .boutton-profil{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 0.5vw;
+}
+#grid-2 .boutton-profil .black{
+	text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 1vw;
+    font-size: 1vw; 
+    border-radius: 3vw;
+    grid-row: 1/3;
+}
+#grid-2 .boutton-profil .roi{
+	text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 1vw;
+    font-size: 1vw; 
+    border-radius: 3vw;
+    grid-column: 2/ 3;
+}
+#grid-2 .boutton-profil .vie{
+	text-decoration: none;
+    color: white;
+    background-color: blue;
+    padding: 1vw;
+    padding-left: 2vw;
+    font-size: 1vw; 
+    border-radius: 3vw;
+    grid-column: 2/ 3;
+}
+/*contact*/
+
+.contact{
+    background-image: url(../image/acceil/Pantherhome7.png);
+    background-size: contain;
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
+
+.remplir{
+    width: 50vw;
+    height: 35vw;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff70 90.43%);
+    border-radius: 15%;
+    padding: 5%;
+    line-height: 1.8;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.formulaire p {
+    color: var(--blue-color2);
+    font-size: 1em;
+}
+
+.formulaire h2 {
+    font-family: cantarell;
+    color: var(--blue-color2);
+    font-size: 2em;
+    margin-bottom: 5%;
+    font-weight: bolder;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+form input {
+    width: 80%;
+    height: 3vw;
+    border-radius: 3em;
+    border: 1px solid;
+    background: transparent;
+    padding-left: 3%;
+    margin: 0 auto;
+}
+
+input::placeholder {
+    color: var(--blue-color2); 
+    font-size: 1vw;
+}
+
+form button{
+    width: 10vw;
+    padding: 2% 3%;
+    font-size: 1em;
+    border-radius: 3em;
+    background-color: grey;
+    border: none;
+    margin: 0 auto;
+    color: var(--blue-color2);
+    font-family: cantarell;
+    font-weight: bold;
+}
+/*footer */
+footer {
+    background-image: url(../image/all\ pages/footer-image.png);
+    background-position: center;
+    padding-top: 8%;
+    padding-bottom: 4.5%;
+    margin-top: 12%;
+    display: grid;
+    grid-template-columns: 0.9fr 1fr;
+}
+
+/* partie gauche */
+.footer-left {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4.5%;
+}
+
+.footer-left .img1 {
+    position: relative;
+    margin-right: 10%;
+}
+
+.footer-left .img1 img{
+    width: 18vw;
+}
+
+.footer-left .img2 {
+   position: absolute;
+   top: 8vw;
+   left: 4.5vw;
+}
+
+.footer-left .img2 img {
+    width: 8vw;
+}
+
+/* partie droite */
+.footer-right {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr;
+    color: white;
+} 
+
+footer h4 {
+    font-family: cantarell;
+    word-spacing: 1em;
+    letter-spacing: 5px;
+    line-height: 5;
+}
+
+footer p {
+    line-height: 2;
+}
+
+.footer-right ul {
+    list-style-type: none;
+    display: flex;
+    gap: 8%;
+}
+
+.footer-right ul img {
+    width: 2.5vw;
+}
+
+.copyright {
+    grid-column: span 2;
+}
+section * {
+    animation-name: fade-in;
+    animation-duration: 5s;
+}
+.reseaux li:hover{
+    transform: scale(1.2);
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 100%;
+        transform: translateX(0px); 
+    }
+}
+
+
+
+
+
